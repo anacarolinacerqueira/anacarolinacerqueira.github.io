@@ -1,0 +1,152 @@
+* {
+	box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html{
+    background-color: #fffcf2;
+    height: 100%;
+}
+
+#hello{
+    margin: 1%;
+    font-size: 1.5em;
+}
+
+#hello p{
+    margin-top: 0.1%;
+    font-size: 120%;
+}
+
+/* animation code adapted by: https://codepen.io/thiagoteles/pen/ogoxLw */
+.line-1{
+    border-right: 2px solid rgba(255,255,255,0.75);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2s steps(10) 2s 1 normal both,
+             blinkTextCursor 1s steps(10) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 8.1em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(231, 127, 24, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+#name{
+    float: left;
+    width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 5%;
+}
+
+#name h1{
+    font-size: 2.5em;
+}
+
+#name h3{
+    font-size: 1.5em;
+    margin-top: -3%;
+    color: #EE7444;
+    font-weight: bolder;
+}
+
+#name p{
+    width: 70%;
+    text-align: justify;
+    margin-left: 15%;
+}
+
+#menu{
+    width: 100%;
+    margin-top: 3%;
+}
+
+#profile-picture{
+    width: 25%;
+    margin-top: 5%;
+    
+}
+
+.btn-page{
+    border: 3px solid transparent;
+    border-radius: 15px;
+    background-color:#EE7444;
+    color: #403D39;
+    padding: 10px;
+}
+
+.btn-page:hover{
+    border: 3px solid #EE7444;
+    background-color: #403D39;
+    color: #ffffff;
+}
+
+#menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 1%;
+    font-size: 1.2em;
+
+}
+
+#menu ul li a{
+    text-decoration: none;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+#knowledges{
+    background-color: #EE7444;
+    color: #ffffff;
+}
+
+#knowledges ul li{
+    list-style-type: none;
+}
+
+#projects{
+   justify-content: center;
+}
+
+#projects div{
+    display: block;
+    justify-content: center;
+    width: 30%;
+    height: 20%;
+    float: left;
+}
+
+#projects div h3{
+   text-align: center;
+   height: 20%;
+}
+
+#projects img{
+    width: 50%;
+    height: auto;
+}
+
+footer{
+    float: bottom;
+    width: 100%;
+    color: #403D39;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#social{
+    color: #EE7444;
+    font-size: 2em;
+}
