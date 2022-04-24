@@ -39,7 +39,7 @@ html{
   to{border-right-color: transparent;}
 }
 
-#name{
+.name{
     float: left;
     width: 60%;
     text-align: center;
@@ -47,18 +47,18 @@ html{
     margin-top: 5%;
 }
 
-#name h1{
+.name h1{
     font-size: 2.5em;
 }
 
-#name h3{
+.name h3{
     font-size: 1.5em;
     margin-top: -3%;
     color: #EE7444;
     font-weight: bolder;
 }
 
-#name p{
+.name p{
     width: 70%;
     text-align: justify;
     margin-left: 15%;
@@ -72,7 +72,6 @@ html{
 #profile-picture{
     width: 25%;
     margin-top: 5%;
-    
 }
 
 .btn-page{
@@ -94,17 +93,18 @@ html{
     display: inline-block;
     padding: 1%;
     font-size: 1.2em;
-
 }
 
 #menu ul li a{
     text-decoration: none;
 }
 
+#title-about{
+    width: 100%;
+}
+
 article{
-    display: flex;
-    justify-content: center;
-    width: 60%;
+    width: 100%;
 }
 
 #knowledges{
@@ -149,4 +149,17 @@ footer{
 #social{
     color: #EE7444;
     font-size: 2em;
+}
+
+#social a{
+    text-decoration: none;
+    color: #EE7444;
+    border: 2px solid transparent;
+    border-radius: 60%;
+    padding: 0.4%;
+}
+
+#social a:hover{
+    border: 2px solid #EE7444;
+    opacity: 60%;
 }
