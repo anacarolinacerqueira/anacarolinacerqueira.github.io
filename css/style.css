@@ -164,11 +164,10 @@ footer{
     text-decoration: none;
     color: #EE7444;
     border: 2px solid transparent;
-    border-radius: 60%;
     padding: 0.4%;
+    opacity: 80%;
 }
 
 #social a:hover{
-    border: 2px solid #EE7444;
-    opacity: 60%;
+    opacity: 100%;
 }
