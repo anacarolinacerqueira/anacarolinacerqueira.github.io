@@ -8,6 +8,21 @@ html{
     height: 100%;
 }
 
+body{
+    animation: fadeInAnimation ease-in 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
 #hello{
     margin: 0.5%;
     font-size: 1.5em;
@@ -65,9 +80,37 @@ html{
     margin-left: 15%;
 }
 
+#cover{
+    width: 100%;
+    height: 40%;
+    background: rgb(255,255,255);
+    background: linear-gradient(216deg, rgba(255,255,255,1) 0%, rgba(178,255,100,1) 100%);  
+}
+
+#icons i{
+    color: #EE7444;
+    font-size: 4em;
+    text-align: center;
+}
+
+#cover h3{
+    margin: 2%;
+    text-align: center;
+    margin-bottom: -2%;
+    font-size: 3em;
+}
+
 #menu{
     width: 100%;
     margin-top: 3%;
+}
+
+#pic-about{
+    width: 16%;
+    border-radius: 50%;
+    align-items: center;
+    float: left;
+    margin-left: 42%;
 }
 
 #profile-picture{
@@ -82,6 +125,26 @@ html{
     transform: scale(1.05);
 }
 
+h2{
+    width: 20%;
+    float: left;
+    margin-left: 40%;
+    font-size: 2em;
+    text-align: center;
+}
+
+#button-text{
+    float: left;
+    width: 20%;
+    margin-left: 40%;
+}
+
+#about-text{
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
 .btn-page{
     border: 3px solid #EE7444;
     background-color: #fffcf2;
@@ -93,7 +156,7 @@ html{
 .btn-page:hover{
     border: 3px solid transparent;
     background-color:#EE7444;
-    color: #403D39;
+    color: #fffcf2;
 }
 
 #menu ul li{
@@ -109,6 +172,37 @@ html{
 
 #title-about{
     width: 100%;
+}
+
+.btn-page-alt{
+    border: 3px solid #EE7444;
+    background-color: #fffcf2;
+    color: #EE7444;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.btn-page-alt:hover{
+    border: 3px solid transparent;
+    background-color:#EE7444;
+    color: #fffcf2;
+}
+
+#menu-alt{
+    float: right;
+    width: 30%;
+    display: inline;
+}
+
+#menu-alt ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 1%;
+    font-size: 1.2em;
+}
+
+#menu-alt ul li a{
+    text-decoration: none;
 }
 
 article{
@@ -163,7 +257,6 @@ footer{
 #social a{
     text-decoration: none;
     color: #EE7444;
-    border: 2px solid transparent;
     padding: 0.4%;
     opacity: 80%;
 }
