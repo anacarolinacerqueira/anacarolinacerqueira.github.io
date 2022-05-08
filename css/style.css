@@ -210,7 +210,8 @@ article{
 }
 
 #knowledges{
-    background-color: #EE7444;
+    background: rgb(255,255,255);
+    background: linear-gradient(203deg, rgba(255,255,255,1) 0%, rgba(238,199,68,1) 100%);
     color: #ffffff;
 }
 
