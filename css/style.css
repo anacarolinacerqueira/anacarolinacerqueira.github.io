@@ -1,6 +1,8 @@
 * {
 	box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 html{
@@ -115,6 +117,7 @@ body{
 
 #profile-picture{
     width: 25%;
+    height: auto;
     margin-top: 5%;
     border-radius: 50%;
     box-shadow: 10px 10px 5px #ed9c7d, 15px 15px 8px rgb(183, 176, 176);
@@ -234,6 +237,14 @@ article{
 #projects div h3{
    text-align: center;
    height: 20%;
+}
+
+.loader-container {
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 250px;
+    display: block;
 }
 
 #projects img{
