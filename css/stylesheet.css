@@ -44,7 +44,7 @@ body{
 #name h2{
     font-size: 1.5em;
     padding: 0.5%;
-    color: #3C5A3A;
+    color: #A33100;
     font-weight: bolder;
 }
 
@@ -67,12 +67,17 @@ body{
     height: auto;
     margin-top: 5%;
     border-radius: 50%;
-    box-shadow: 10px 10px 5px #3C5A3A, 15px 15px 8px rgb(183, 176, 176);
+    box-shadow: 10px 10px 5px #A33100, 15px 15px 8px rgb(183, 176, 176);
     transition: transform .5s;
 }
 
 #profile-picture:hover{
     transform: scale(1.05);
+}
+
+#profile-picture img{
+    width: 100%;
+    height: auto;
 }
 
 .loader-container {
@@ -100,7 +105,7 @@ footer{
 .icon {
     width: 2em;
     height: auto;
-    opacity: 50%;
+    opacity: 60%;
     padding-right: 0.5%;
 }
 
