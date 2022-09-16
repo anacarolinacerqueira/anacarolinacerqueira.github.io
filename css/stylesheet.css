@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    animation: fadeInAnimation ease-in 0.5s;
+    animation: fadeInAnimation ease-in 0.2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -99,6 +99,7 @@ footer{
 
 .icon {
     width: 2em;
+    height: auto;
     opacity: 50%;
     padding-right: 0.5%;
 }
