@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #ffffff;
+    height: 100%;
+}
+
+body{
+    animation: fadeInAnimation ease-in 0.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+#main {
+    margin-top: 5%;
+}
+
+#name{
+    float: left;
+    width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10%;
+}
+
+#name h1{
+    font-size: 2.5em;
+}
+
+#name h3{
+    font-size: 1.5em;
+    padding: 0.5%;
+    color: #EE7444;
+    font-weight: bolder;
+}
+
+#name p{
+    width: 70%;
+    text-align: justify;
+    margin-left: 15%;
+}
+
+#pic-about{
+    width: 16%;
+    border-radius: 50%;
+    align-items: center;
+    float: left;
+    margin-left: 42%;
+}
+
+#profile-picture{
+    width: 25%;
+    height: auto;
+    margin-top: 5%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px #ed9c7d, 15px 15px 8px rgb(183, 176, 176);
+    transition: transform .5s;
+}
+
+#profile-picture:hover{
+    transform: scale(1.05);
+}
+
+.loader-container {
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 250px;
+    display: block;
+}
+
+#projects img{
+    width: 50%;
+    height: auto;
+}
+
+footer{
+    width: 100%;
+    color: #403D39;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 5%;
+}
+
+.icon {
+    color: #EE7444;
+    width: 2em;
+    opacity: 75%;
+    padding-right: 0.5%;
+}
+
+.icon :hover{
+    opacity: 100%;
+}
+
+#social{
+    margin-top: 4%;
+    color: #EE7444;
+    font-size: 1.5em;
+}
