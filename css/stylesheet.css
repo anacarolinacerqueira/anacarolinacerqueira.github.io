@@ -63,9 +63,11 @@ body{
 }
 
 #profile-picture{
+    float: right;
     width: 25%;
     height: auto;
     margin-top: 5%;
+    margin-right: 15%;
     border-radius: 50%;
     box-shadow: 10px 10px 5px #A33100, 15px 15px 8px rgb(183, 176, 176);
     transition: transform .5s;
@@ -77,19 +79,6 @@ body{
 
 #profile-picture img{
     width: 100%;
-    height: auto;
-}
-
-.loader-container {
-    position: relative;
-    float: left;
-    width: 250px;
-    height: 250px;
-    display: block;
-}
-
-#projects img{
-    width: 50%;
     height: auto;
 }
 
@@ -117,3 +106,163 @@ footer{
     margin-top: 4%;
     font-size: 1.5em;
 }
+
+/*media queries to make the desing responsive for more devices */
+
+@media screen and (max-width: 767px) {
+
+    #profile-picture{
+        width: 70%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    #name{
+        width: 100%;
+    }
+
+    #name h1 {
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    #name h2 {
+        font-size: 1.0em;
+        width: 100%;
+    }
+
+    #name p {
+        margin-top: 3%;
+        font-size: 0.85em;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    footer{
+        float: left;
+        position: relative;
+        width: 80%;
+        margin-left: 10%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+        font-size: 0.8em;
+    }
+
+    .icon {
+        width: 1em;
+        height: auto;
+        opacity: 80%;
+        padding-top: 5%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    
+    #profile-picture{
+        width: 50%;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 25%;
+    }
+
+    #name{
+        width: 100%;
+    }
+
+    #name h1 {
+        font-size: 2.5em;
+        width: 100%;
+    }
+
+    #name h2 {
+        font-size: 1.8em;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #name p {
+        margin-top: 3%;
+        font-size: 1.2em;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    footer{
+        float: left;
+        position: relative;
+        width: 100%;
+        margin-left: 0%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+        font-size: 1.2em;
+    }
+
+    .icon {
+        width: 1.5em;
+        height: auto;
+        opacity: 80%;
+    }
+  }
+  
+
+  @media screen and (max-width: 374px) {
+
+    #profile-picture{
+        width: 60%;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 20%;
+    }
+
+    #name h2 {
+        width: 80%;
+        margin-left: 10%;
+    }
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 412px) {
+
+    #name h2 {
+        width: 80%;
+        margin-left: 10%;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+
+    #name h1 {
+        width: 80%;
+        margin-left: 10%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1500px) {
+
+    #name h1 {
+        font-size: 2em;
+    }
+
+    #name h2 {
+        font-size: 1.2em;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    #name p {
+        font-size: 0.8em;
+        margin-top: 2%;
+    }
+
+    #profile-picture{
+        margin-top: 5%;
+    }
+
+    .icon {
+        width: 1.5em;
+    }
+  }
