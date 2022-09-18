@@ -82,6 +82,17 @@ body{
     height: auto;
 }
 
+#email-text{
+    display: block;
+    font-size: 0.5em;
+    float: left;
+    width: 100%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    color: transparent;
+    /*color: #A33100; */
+}
+
 footer{
     width: 100%;
     color: #403D39;
@@ -103,7 +114,7 @@ footer{
 }
 
 #social{
-    margin-top: 4%;
+    margin-top: 2%;
     font-size: 1.5em;
 }
 

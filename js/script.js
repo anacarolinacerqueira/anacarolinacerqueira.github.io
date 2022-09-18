@@ -1,4 +1,4 @@
-function changeAboutMeText() {
+/* function changeAboutMeText() {
   var x = document.getElementById("about-text");
   changeTitleName();
       if (x.innerHTML === "Oi, eu sou Ana Carolina") {
@@ -15,6 +15,14 @@ function changeTitleName() {
       } else {
            y.innerHTML = "Ler Textinho";
       }
-}
+} */
 
+function showMailText() {
+    const mail = document.getElementById('email-text');
+    mail.style.color = '#A33100';
+};
 
+function hideMailText() {
+    const mail = document.getElementById('email-text');
+    mail.style.color = 'transparent';
+};
