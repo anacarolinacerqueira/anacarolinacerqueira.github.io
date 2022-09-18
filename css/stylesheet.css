@@ -39,6 +39,7 @@ body{
 
 #name h1{
     font-size: 2.5em;
+    color: #403D39;
 }
 
 #name h2{
@@ -52,6 +53,7 @@ body{
     width: 70%;
     text-align: left;
     margin-left: 15%;
+    color: #403D39;
 }
 
 #pic-about{
@@ -95,11 +97,14 @@ body{
 
 footer{
     width: 100%;
-    color: #403D39;
+    color: #F6E7B7;
     text-align: center;
-    position: fixed;
-    left: 0;
+    position: relative;
+    float: left;
     bottom: 5%;
+    background-color: #A33100;
+    height: 30%;
+    padding: 2%;
 }
 
 .icon {
@@ -117,6 +122,83 @@ footer{
     margin-top: 2%;
     font-size: 1.5em;
 }
+
+#experience {
+    background-color: #FAF3DB;
+    float: left;
+    width: 100%;
+    margin-top: 5%;
+}
+
+#experience h2{
+    color:#A33100;
+    font-size: 3.5em;
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: block;
+    padding-top: 15%;
+    padding-left: 5%;
+    text-align: center;
+}
+
+.experience-title{
+    font-weight: bolder;
+    font-size: 1.5em;
+    color:#A33100;
+}
+
+.experience-company{
+    font-size: 1.1em;
+    display: inline;
+}
+
+.experience-company a{
+    text-decoration: none;
+    color: #304B42;
+}
+
+.job-date{
+    display: inline;
+    font-size: 1em;
+}
+
+.job{
+    padding: 1%;
+    float: right;
+    width: 60%;
+    color:#403D39;
+}
+
+.company-logo{
+   width: 5%;
+   height: auto;
+   float: left;
+}
+
+.company-logo img{
+    width: 100%;
+    height: auto;
+    margin-top: 50%;
+}
+
+.job-details{
+    list-style-type: none;
+    display: inline-block;
+    padding: 1%;
+    width: 75%;
+}
+
+.more:hover{
+    cursor: pointer;
+    color:#A33100;
+}
+
+.more{
+
+    width: 60%;
+}
+
 
 /*media queries to make the desing responsive for more devices */
 
