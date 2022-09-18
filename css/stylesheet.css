@@ -124,7 +124,7 @@ footer{
 }
 
 #experience {
-    background-color: #F6E7B7;
+    background-color: #FAF3DB;
     float: left;
     width: 100%;
     margin-top: 5%;
@@ -144,17 +144,18 @@ footer{
 
 .experience-title{
     font-weight: bolder;
-    font-size: 1.8em;
+    font-size: 1.5em;
     color:#A33100;
 }
 
 .experience-company{
-    font-size: 1.2em;
+    font-size: 1.1em;
     display: inline;
 }
 
 .experience-company a{
     text-decoration: none;
+    color: #304B42;
 }
 
 .job-date{
@@ -185,12 +186,17 @@ footer{
     list-style-type: none;
     display: inline-block;
     padding: 1%;
+    width: 75%;
 }
 
-.more-details{
-    float: right;
-    width: 100%;
-    text-align: center;
+.more:hover{
+    cursor: pointer;
+    color:#A33100;
+}
+
+.more{
+
+    width: 60%;
 }
 
 

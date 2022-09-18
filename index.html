@@ -8,11 +8,12 @@
         </style>
         <meta name="description" content="Site Profissional de Ana Carolina Cerqueira - Analista de Testes | QA | Quality Assurance Analyst | Testes Automatizados.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="js/script.js"></script>
+        <script src="js/script.js">
+        </script>
         <!-- add icon link -->
         <link rel = "icon" href ="https://cdn-icons-png.flaticon.com/512/346/346072.png" type = "image/x-icon">
     </head>
-    <body>
+    <body onload="showShortTextCompass()">
       <section id="main">
         <section>
             <img id="profile-picture" src="img/anacarolina.jpeg" alt="Foto do rosto de Ana Carolina. Uma mulher negra de cabelo crespo, sorrindo" loading=“lazy”>
@@ -40,19 +41,16 @@
                 <p class="job-date"> SETEMBRO DE 2021 - ATUAL </p>
                 <div class="job-description">
                     <div class="company-logo"><img src="img/compass.png" alt="logo da empresa compass.uol"></div>
-                    <ul class="job-details">
-                        <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
-                        <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
-                        <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
-                        <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
-                    </ul>
-                    <div class="more-details">mais detalhes</div>
+                    <div class="job-details">
+                        <p id="compass-full"></p>
+                    </div>
+                    <div class="more" id="more-compass" onclick="changeViewMoreCompass()">ver mais detalhes</div>
                      
                 </div>
             </div>
             <div class="job">
                 <h3 class="experience-title"> Analista de Testes Junior </h3>
-                <p class="experience-company"><a href="https://www.acpgroup.com.br/">ACP GROUP 🔗 | </a></p>
+                <p class="experience-company"><a href="https://www.acpgroup.com.br/" target="_blank">ACP GROUP 🔗 | </a></p>
                 <p class="job-date"> MARÇO DE 2021 - SETEMBRO DE 2021 </p>
                 <div class="job-description">
                     <div class="company-logo"><img src="img/acp.png" alt="logo da empresa acp group"></div>
@@ -62,13 +60,13 @@
                         <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
                         <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
                     </ul>
-                    <div class="more-details">mais detalhes</div>
+                    <div class="more" id="more-acp" onclick="">ver mais detalhes</div>
                      
                 </div>
             </div>
             <div class="job">
                 <h3 class="experience-title"> Estagiária de Testes </h3>
-                <p class="experience-company"><a href="https://www.cworks.com.br/">CONVERGENCE WORKS 🔗 | </a></p>
+                <p class="experience-company"><a href="https://www.cworks.com.br/" target="_blank">CONVERGENCE WORKS 🔗 | </a></p>
                 <p class="job-date"> OUTUBRO DE 2020 - MARÇO DE 2021 </p>
                 <div class="job-description">
                     <div class="company-logo"><img src="img/cw.png" alt="logo da empresa convergence works"></div>
@@ -78,7 +76,7 @@
                         <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
                         <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
                     </ul>
-                    <div class="more-details">mais detalhes</div>   
+                    <div class="more" id="more-cw" onclick="">ver mais detalhes</div>   
                 </div>
             </div>
         </section> 
