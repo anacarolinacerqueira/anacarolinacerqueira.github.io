@@ -84,7 +84,7 @@ function changeViewMoreAcp() {
   }}
 
   function changeViewMoreCw() {
-    var y = document.getElementById("more-acp");
+    var y = document.getElementById("more-cw");
       if (y.innerHTML === "ver mais detalhes") {
           changeLongShortTextCw();  
           y.innerHTML = "ver menos detalhes";
