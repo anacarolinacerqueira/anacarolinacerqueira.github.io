@@ -159,12 +159,13 @@ footer{
 
 .experience-company a{
     text-decoration: none;
-    color: #304B42;
+    color: #813B36;
 }
 
 .job-date{
     display: inline;
     font-size: 1em;
+    color: #813B36;
 }
 
 .job{
@@ -200,7 +201,7 @@ footer{
 
 .more{
     float: right;
-    width: 35%;
+    width: 36%;
 }
 
 
