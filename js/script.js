@@ -16,12 +16,14 @@ function changeTitleName() {
            y.innerHTML = "Ler Textinho";
       }
 } */
-const shortTextCompass = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS)";
+const shortTextCompass = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. ";
 const longTextCompass = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS). Principais ferramentas e tecnologias utilizadas: Postman, BrowserStack, Microsoft Azure DevOps";
-const shortTextAcp = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS)";
+const shortTextAcp = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. ";
 const longTextAcp = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS). Principais ferramentas e tecnologias utilizadas: Postman, BrowserStack, Microsoft Azure DevOps";
-const shortTextCw = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS)";
+const shortTextCw = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad.";
 const longTextCw = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS). Principais ferramentas e tecnologias utilizadas: Postman, BrowserStack, Microsoft Azure DevOps";
+const shortTextSti = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad.";
+const longTextSti = "Esta foi a minha primeira experiência profissional atuando na área de testes de software. atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS). Principais ferramentas e tecnologias utilizadas: Postman, BrowserStack, Microsoft Azure DevOps";
 const footerText = "Ana Carolina Cerqueira, 2022. Desenvolvido com HTML e CSS <3"
 
 function changeLongShortTextCompass() {
@@ -47,7 +49,7 @@ function changeLongShortTextAcp() {
   }
 
 function changeLongShortTextCw() {
-    var x = document.getElementById("acp");
+    var x = document.getElementById("cw");
         if (x.innerHTML === shortTextCw) {
             x.innerHTML = longTextCw;
         } else {
@@ -56,6 +58,18 @@ function changeLongShortTextCw() {
           }
         }
 }
+
+function changeLongShortTextSti() {
+    var x = document.getElementById("sti");
+        if (x.innerHTML === shortTextSti) {
+            x.innerHTML = longTextSti;
+        } else {
+          if (x.innerHTML === longTextSti){
+              x.innerHTML = shortTextSti;
+          }
+        }
+}
+
 
 function changeViewMoreCompass() {
   var y = document.getElementById("more-compass");
@@ -81,10 +95,10 @@ function changeViewMoreAcp() {
           changeLongShortTextAcp();  
           y.innerHTML = "ver mais detalhes";
       }
-  }}
+}}
 
-  function changeViewMoreCw() {
-    var y = document.getElementById("more-acp");
+function changeViewMoreCw() {
+    var y = document.getElementById("more-cw");
       if (y.innerHTML === "ver mais detalhes") {
           changeLongShortTextCw();  
           y.innerHTML = "ver menos detalhes";
@@ -94,7 +108,20 @@ function changeViewMoreAcp() {
           changeLongShortTextCw();  
           y.innerHTML = "ver mais detalhes";
       }
-  }}
+}}
+
+function changeViewMoreSti() {
+    var y = document.getElementById("more-sti");
+      if (y.innerHTML === "ver mais detalhes") {
+          changeLongShortTextSti();  
+          y.innerHTML = "ver menos detalhes";
+            
+      } else {
+          if (y.innerHTML === "ver menos detalhes") {
+          changeLongShortTextSti();  
+          y.innerHTML = "ver mais detalhes";
+      }
+}}
 
 function showMailText() {
     const mail = document.getElementById('email-text');
@@ -121,6 +148,12 @@ function showShortTextCw() {
     x.innerHTML = shortTextCw;
 }
 
+function showShortTextSti() {
+    var x = document.getElementById("sti");
+    x.innerHTML = shortTextSti;
+}
+
+
 function showFooterText() {
     var x = document.getElementById("footer");
     x.innerHTML = footerText;
@@ -130,5 +163,11 @@ function getContent(){
     showShortTextCompass();
     showShortTextAcp();
     showShortTextCw();
+    showShortTextSti();
     showFooterText();
 }
+
+function simpleFade() {
+    const textmore = document.getElementsByClassName('more');
+    textmore.style.animation = 'fadeIn 1s';
+};
