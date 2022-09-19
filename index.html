@@ -13,8 +13,8 @@
         <!-- add icon link -->
         <link rel = "icon" href ="https://cdn-icons-png.flaticon.com/512/346/346072.png" type = "image/x-icon">
     </head>
-    <body onload="showShortTextCompass()">
-      <section id="main">
+    <body onload="getContent()">
+      <section id="about">
         <section>
             <img id="profile-picture" src="img/anacarolina.jpeg" alt="Foto do rosto de Ana Carolina. Uma mulher negra de cabelo crespo, sorrindo" loading=“lazy”>
         </section>
@@ -42,7 +42,7 @@
                 <div class="job-description">
                     <div class="company-logo"><img src="img/compass.png" alt="logo da empresa compass.uol"></div>
                     <div class="job-details">
-                        <p id="compass-full"></p>
+                        <p id="compass"></p>
                     </div>
                     <div class="more" id="more-compass" onclick="changeViewMoreCompass()">ver mais detalhes</div>
                      
@@ -54,13 +54,10 @@
                 <p class="job-date"> MARÇO DE 2021 - SETEMBRO DE 2021 </p>
                 <div class="job-description">
                     <div class="company-logo"><img src="img/acp.png" alt="logo da empresa acp group"></div>
-                    <ul class="job-details">
-                        <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
-                        <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
-                        <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
-                        <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
-                    </ul>
-                    <div class="more" id="more-acp" onclick="">ver mais detalhes</div>
+                    <div class="job-details">
+                        <p id="acp"></p>
+                    </div>
+                    <div class="more" id="more-acp" onclick="changeViewMoreAcp()">ver mais detalhes</div>
                      
                 </div>
             </div>
@@ -70,18 +67,15 @@
                 <p class="job-date"> OUTUBRO DE 2020 - MARÇO DE 2021 </p>
                 <div class="job-description">
                     <div class="company-logo"><img src="img/cw.png" alt="logo da empresa convergence works"></div>
-                    <ul class="job-details">
-                        <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
-                        <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
-                        <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
-                        <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
-                    </ul>
-                    <div class="more" id="more-cw" onclick="">ver mais detalhes</div>   
+                    <div class="job-details">
+                        <p id="cw"></p>
+                    </div>
+                    <div class="more" id="more-cw" onclick="changeViewMoreCw()">ver mais detalhes</div>   
                 </div>
             </div>
         </section> 
         <footer>
-            <p>Ana Carolina Cerqueira, 2022. Desenvolvido com HTML e CSS <3 </p>
+            <p id="footer"> </p>
         </footer>
     </body>
 </html>

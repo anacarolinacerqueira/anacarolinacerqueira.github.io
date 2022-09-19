@@ -56,6 +56,10 @@ body{
     color: #403D39;
 }
 
+#about{
+    height: auto;
+}
+
 #pic-about{
     width: 16%;
     border-radius: 50%;
@@ -192,6 +196,7 @@ footer{
 .more:hover{
     cursor: pointer;
     color:#A33100;
+    font-weight: bold;
 }
 
 .more{

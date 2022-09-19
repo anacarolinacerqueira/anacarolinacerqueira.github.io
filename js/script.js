@@ -16,18 +16,16 @@ function changeTitleName() {
            y.innerHTML = "Ler Textinho";
       }
 } */
-
 const shortTextCompass = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS)";
 const longTextCompass = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS). Principais ferramentas e tecnologias utilizadas: Postman, BrowserStack, Microsoft Azure DevOps";
-
-
-function showShortTextCompass() {
-    var x = document.getElementById("compass-full");
-    x.innerHTML = shortTextCompass;
-}
+const shortTextAcp = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS)";
+const longTextAcp = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS). Principais ferramentas e tecnologias utilizadas: Postman, BrowserStack, Microsoft Azure DevOps";
+const shortTextCw = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS)";
+const longTextCw = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS). Principais ferramentas e tecnologias utilizadas: Postman, BrowserStack, Microsoft Azure DevOps";
+const footerText = "Ana Carolina Cerqueira, 2022. Desenvolvido com HTML e CSS <3"
 
 function changeLongShortTextCompass() {
-  var x = document.getElementById("compass-full");
+  var x = document.getElementById("compass");
       if (x.innerHTML === shortTextCompass) {
           x.innerHTML = longTextCompass;
       } else {
@@ -35,6 +33,28 @@ function changeLongShortTextCompass() {
             x.innerHTML = shortTextCompass;
         }
       }
+}
+
+function changeLongShortTextAcp() {
+    var x = document.getElementById("acp");
+        if (x.innerHTML === shortTextAcp) {
+            x.innerHTML = longTextAcp;
+        } else {
+          if (x.innerHTML === longTextAcp){
+              x.innerHTML = shortTextAcp;
+          }
+        }
+  }
+
+function changeLongShortTextCw() {
+    var x = document.getElementById("acp");
+        if (x.innerHTML === shortTextCw) {
+            x.innerHTML = longTextCw;
+        } else {
+          if (x.innerHTML === longTextCw){
+              x.innerHTML = shortTextCw;
+          }
+        }
 }
 
 function changeViewMoreCompass() {
@@ -50,6 +70,31 @@ function changeViewMoreCompass() {
     }
 }}
 
+function changeViewMoreAcp() {
+    var y = document.getElementById("more-acp");
+      if (y.innerHTML === "ver mais detalhes") {
+          changeLongShortTextAcp();  
+          y.innerHTML = "ver menos detalhes";
+            
+      } else {
+          if (y.innerHTML === "ver menos detalhes") {
+          changeLongShortTextAcp();  
+          y.innerHTML = "ver mais detalhes";
+      }
+  }}
+
+  function changeViewMoreCw() {
+    var y = document.getElementById("more-acp");
+      if (y.innerHTML === "ver mais detalhes") {
+          changeLongShortTextCw();  
+          y.innerHTML = "ver menos detalhes";
+            
+      } else {
+          if (y.innerHTML === "ver menos detalhes") {
+          changeLongShortTextCw();  
+          y.innerHTML = "ver mais detalhes";
+      }
+  }}
 
 function showMailText() {
     const mail = document.getElementById('email-text');
@@ -60,3 +105,30 @@ function hideMailText() {
     const mail = document.getElementById('email-text');
     mail.style.color = 'transparent';
 };
+
+function showShortTextCompass() {
+    var x = document.getElementById("compass");
+    x.innerHTML = shortTextCompass;
+}
+
+function showShortTextAcp() {
+    var x = document.getElementById("acp");
+    x.innerHTML = shortTextAcp;
+}
+
+function showShortTextCw() {
+    var x = document.getElementById("cw");
+    x.innerHTML = shortTextCw;
+}
+
+function showFooterText() {
+    var x = document.getElementById("footer");
+    x.innerHTML = footerText;
+}
+
+function getContent(){
+    showShortTextCompass();
+    showShortTextAcp();
+    showShortTextCw();
+    showFooterText();
+}
