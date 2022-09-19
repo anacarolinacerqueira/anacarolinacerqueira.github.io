@@ -142,7 +142,7 @@ footer{
     height: 100%;
     display: block;
     padding-top: 15%;
-    padding-left: 5%;
+    padding-left: 3%;
     text-align: center;
 }
 
@@ -183,11 +183,10 @@ footer{
 .company-logo img{
     width: 100%;
     height: auto;
-    margin-top: 50%;
+    margin-top: 30%;
 }
 
 .job-details{
-    list-style-type: none;
     display: inline-block;
     padding: 1%;
     width: 75%;
@@ -196,12 +195,12 @@ footer{
 .more:hover{
     cursor: pointer;
     color:#A33100;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .more{
-
-    width: 60%;
+    float: right;
+    width: 35%;
 }
 
 
