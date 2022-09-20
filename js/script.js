@@ -24,7 +24,7 @@ const shortTextCw = "Alocada no cliente Cooperativa Central Ailos (setor finance
 const longTextCw = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS). Principais ferramentas e tecnologias utilizadas: Postman, BrowserStack, Microsoft Azure DevOps";
 const shortTextSti = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad.";
 const longTextSti = "Esta foi a minha primeira experiência profissional atuando na área de testes de software. atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS). Principais ferramentas e tecnologias utilizadas: Postman, BrowserStack, Microsoft Azure DevOps";
-const footerText = "Ana Carolina Cerqueira, 2022. Desenvolvido com HTML e CSS <3"
+const footerText = "Ana Carolina Cerqueira, 2022. Desenvolvido com HTML, CSS e JavaScript <3"
 
 function changeLongShortTextCompass() {
   var x = document.getElementById("compass");
