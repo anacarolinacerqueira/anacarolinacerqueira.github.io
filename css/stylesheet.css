@@ -332,8 +332,8 @@ footer{
     margin-bottom: 10%;
 }
 .skill-col{
-    width: 32%;
-    margin: 2%;
+    width: 31%;
+    margin: 1.5%;
     float: left;
     padding: 1%;
 }
@@ -353,7 +353,7 @@ footer{
 }
 
 #col-1{
-    width: 24%;
+    width: 25%;
 }
 
 /*media queries to make the desing responsive for more devices */
