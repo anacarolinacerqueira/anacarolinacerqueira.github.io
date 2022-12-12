@@ -15,7 +15,7 @@ function changeTitleName() {
       } else {
            y.innerHTML = "Ler Textinho";
       }
-} */
+} 
 const shortTextCompass = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. ";
 const longTextCompass = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. Principalmente, testes de Microsserviços (APIs Rest), testes de UI e testes mobile (Android e iOS). Principais ferramentas e tecnologias utilizadas: Postman, BrowserStack, Microsoft Azure DevOps";
 const shortTextAcp = "Alocada no cliente Cooperativa Central Ailos (setor financeiro), atuando como QA em uma squad ágil. Minhas principais atividades são planejamento e execução de testes de back-end e front-end nos produtos desenvolvidos pela squad. ";
@@ -123,16 +123,6 @@ function changeViewMoreSti() {
       }
 }}
 
-function showMailText() {
-    const mail = document.getElementById('email-text');
-    mail.style.color = '#A33100';
-};
-
-function hideMailText() {
-    const mail = document.getElementById('email-text');
-    mail.style.color = 'transparent';
-};
-
 function showShortTextCompass() {
     var x = document.getElementById("compass");
     x.innerHTML = shortTextCompass;
@@ -152,7 +142,16 @@ function showShortTextSti() {
     var x = document.getElementById("sti");
     x.innerHTML = shortTextSti;
 }
+*/
+function showMailText() {
+    const mail = document.getElementById('email-text');
+    mail.style.color = '#A33100';
+};
 
+function hideMailText() {
+    const mail = document.getElementById('email-text');
+    mail.style.color = 'transparent';
+};
 
 function showFooterText() {
     var x = document.getElementById("footer");
@@ -160,14 +159,15 @@ function showFooterText() {
 }
 
 function getContent(){
-    showShortTextCompass();
-    showShortTextAcp();
-    showShortTextCw();
-    showShortTextSti();
+    //showShortTextCompass();
+    //showShortTextAcp();
+    //showShortTextCw();
+    //showShortTextSti();
     showFooterText();
 }
 
+/*
 function simpleFade() {
     const textmore = document.getElementsByClassName('more');
     textmore.style.animation = 'fadeIn 1s';
-};
+}; */
