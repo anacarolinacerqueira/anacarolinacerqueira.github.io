@@ -98,12 +98,12 @@ body{
 
 footer{
     width: 100%;
-    color: #F6E7B7;
+    color: #fff;
     text-align: center;
     float: left;
     bottom: 5%;
-    background-color: #A33100;
-    height: 20%;
+    background-color: #403D39;
+    height: 15%;
     padding: 2%;
 }
 
@@ -214,28 +214,33 @@ footer{
     width: 100%;
     float: left;
     background-color: #304B42;
+    margin-top: 5%;
+    height: auto;
 }
 
 #certifications h2{
-    font-size: 3em;
+    font-size: 3.5em;
     color: #ffffff;
     float: left;
     width: 100%;
     text-align: center;
+    margin-bottom: 2%;
 }
 
 #logos{
     float: left;
     width: 100%;
+    
     padding: 5%;
 }
 
 #logos img{
-    width: 17em;
+    width: 18em;
     height: auto;
     margin: 1%;
     opacity: 0.9;
     transition: transform .5s;
+    margin-left: 5%;
 }
 
 #logos img:hover{
@@ -250,23 +255,23 @@ footer{
     font-weight: bolder;
 }
 
-#courses{
-    float: left;
-    width: 100%;
+#third-line{
     height: auto;
-    display: block;
+    width: 100%;
+    float: left;
+    background-color: #ffffff;
 }
 
 #university{
     float: left;
-    width: 100%;
+    width: 50%;
     background-color: #fff;
     height: auto;
 }
 
 #university h2{
     width: 100%;
-    font-size: 3em;
+    font-size: 3.5em;
     color: #304B42;
     text-align: center;
     margin-top: 5%;
@@ -274,22 +279,23 @@ footer{
 
 #university div{
     float: left;
-    width: 35%;
-    margin-left: 35%;
+    width: 60%;
+    margin-left: 20%;
     margin-bottom: 3%;
 }
 
 #university img{
     float: left;
-    width: 12%;
+    width: 15%;
     height: auto;
     display: block;
     margin-right: 3%;
+    margin-left: 5%;
 }
 
 #university h3{
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: #304B42;
     margin-top: 3%;
 }
@@ -301,39 +307,91 @@ footer{
 }
 
 #languages{
-    width: 100%;
-    background-color: #A33100;
+    width: 50%;
     height: auto;
-    margin-top: 2%;
-}
-
-.flag{
-    width: 3%;
     float: left;
-    display: block;
+    background-color: #F6E7B7;
+    color: black;
+    padding-bottom: 1.6%;
 }
 
-#languages p{
-    color: #fff;
-    font-size: 1em;
-   
+#languages h2{
+    width: 100%;
+    font-size: 3.5em;
+    color: #A33100;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.language{
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.language img{
+    width: 25%;
+    margin-left: 40%;
+}
+
+.language h3{
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+}
+
+.language p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.language p a{
+    text-decoration: none;
+    color: black;
+}
+
+.language p a:hover{
+    color: #304B42;
+}
+
+
+#courses{
+    float: left;
+    width: 100%;
+    height: auto;
+    height: auto;
+    background-color: #813B36;
 }
 
 #course{
-    width: 100%;
-    height: auto;
-    background-color: #304B42;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    float: left;
+}
+
+#course h2{
+    margin: 3%;
+    color: #fff;
+    font-size: 3.5em;
+    text-align: center;
 }
 
 .course-item{
     padding: 1.5%;
+    font-size: 1.2em;
     width: 50%;
+    height: auto;
+    float: left;
+    align-content: center;
+    align-self:center ;
 }
 
 .course-item a{
     text-decoration: none;
     background-color: #ffffff;
-    color: #304B42;
+    color: #813b36;
     padding: 1%;
     font-weight: bolder;
     border: 3px solid transparent;
@@ -341,7 +399,7 @@ footer{
 
 .course-item a:hover{
     border: 3px solid #fff;
-    background-color: #304B42;
+    background-color: #813b36;
     color: #fff;
 }
 /* certifications and courses section end*/
@@ -351,6 +409,7 @@ footer{
     float: left;
     width: 80%;
     margin-left: 10%;
+    margin-bottom: 3%;
 }
 
 #projects h2{
