@@ -890,3 +890,134 @@ footer{
         height: auto;
     }
 }
+
+
+@media screen and (min-width: 711px) and (max-width: 1023px) {
+    #university img{
+        width: 35%;
+        margin: 0;
+    }
+
+    #university h3{
+        font-size: 2.2em;
+    }
+
+    #university p{
+        font-size: 1.3em;
+    }
+
+    .language{
+        width: 50%;
+    }
+
+    .language img{
+        width: 25%;
+    }
+
+    .course-item{
+        font-size: 1.22em;
+    }
+
+    .project-image{
+        height: auto;
+    }
+
+    .project-description{
+        font-size: 1.2em;
+    }
+
+    .see-github{
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    footer{
+        font-size: 1.4em;
+        height: auto;
+    }
+}
+
+
+@media screen and (min-width: 1023px) and (max-width: 1709px) {
+
+    #name h2{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #profile-picture{
+        margin-top: 15%;
+    }
+
+    #logos img{
+        width: 18%;
+    }
+
+    #university img{
+        width: 35%;
+        margin: 0;
+    }
+
+    #university h2{
+        font-size: 3em;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #university h3{
+        font-size: 2em;
+        margin-left: 30%;
+    }
+
+    #university p{
+        font-size: 1.2em;
+        margin-left: 30%;
+    }
+
+    #university  img{
+        width: 25%;
+    }
+
+    .language{
+        width: 60%;
+        margin-left: 20%;
+        height: 100%;
+    }
+
+    .language img{
+        width: 20%;
+    }
+
+    #language h2{
+        font-size: 1.5em;
+    }
+
+    .course-item{
+        font-size: 1.2em;
+        width: 100%;
+        margin-bottom: 1%;
+        text-align: center;
+    }
+
+    .project{
+        width: 42%;
+    }
+
+    .project-image{
+        height: auto;
+    }
+
+    .project-description{
+        font-size: 1.2em;
+    }
+
+    .see-github{
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    footer{
+        font-size: 1.4em;
+        height: auto;
+    }
+}
