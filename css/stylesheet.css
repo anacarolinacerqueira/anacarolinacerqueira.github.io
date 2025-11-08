@@ -233,12 +233,12 @@ footer{
 #logos{
     float: right;
     width: 100%;
-    padding: 2%;
+    padding: 1.5%;
     margin-right: 0%;
 }
 
 #set-logos{
-    margin-left: 18%;
+    margin-left: 8%;
 }
 
 #logos img{
