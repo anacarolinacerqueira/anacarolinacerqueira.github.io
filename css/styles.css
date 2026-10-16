@@ -1,7 +1,5 @@
 :root {
-  --cream: #F3F5F3;
   --paper: #FFFFFF;
-  --sand: #E8ECE9;
   --mint-band: #E1F0E7;
   --ink: #1C2321;
   --muted: #515C57;
@@ -13,15 +11,19 @@
   --foot: #15231C;
   --on-foot: #EDF3EE;
   --accent: #1F8A63;
+  --nav-h: 52px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: var(--nav-h); }
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
 
 body {
   margin: 0;
-  background: var(--cream);
+  background: var(--paper);
   color: var(--ink);
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 17px;
@@ -44,9 +46,7 @@ ul, ol { padding: 0; list-style: none; }
 .mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
 
 .section { padding: 64px 0; }
-.section--cream { background: var(--cream); }
 .section--paper { background: var(--paper); }
-.section--sand { background: var(--sand); }
 .section--mint { background: var(--mint-band); }
 
 .wrap {
@@ -67,10 +67,61 @@ ul, ol { padding: 0; list-style: none; }
   color: var(--green);
   text-align: center;
 }
-.sec-title--amber { color: var(--amber-ink); }
+
+/* Menu de navegação */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  height: var(--nav-h);
+  background: rgba(255, 255, 255, .94);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.topnav::-webkit-scrollbar { display: none; }
+.topnav ul {
+  display: flex;
+  gap: 4px;
+  width: max-content;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  align-items: center;
+}
+.topnav a {
+  display: block;
+  padding: 6px 12px;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
+}
+@media (hover: hover) {
+  .topnav a:hover { color: var(--green); }
+}
+.topnav a[aria-current] { color: var(--green); border-bottom-color: var(--green); }
+
+/* Em telas menores, o menu quebra em linhas para mostrar todos os itens */
+@media (max-width: 900px) {
+  :root { --nav-h: 76px; }
+  .topnav { height: auto; overflow: visible; }
+  .topnav ul { flex-wrap: wrap; justify-content: center; width: auto; gap: 0; padding: 4px 8px; }
+}
+@media (max-width: 640px) {
+  :root { --nav-h: 86px; }
+  .topnav ul { display: grid; grid-template-columns: repeat(3, auto); justify-content: center; column-gap: 2px; padding: 4px 6px; }
+  .topnav a { font-size: 13px; line-height: 1.45; padding: 3px 8px; text-align: center; }
+}
 
 /* Hero */
-.hero { background: var(--cream); padding: 80px 0 72px; }
+.hero { background: var(--mint-band); padding: 80px 0 72px; }
 .hero .wrap { text-align: center; gap: 18px; }
 .photo { padding: 6px; border-radius: 50%; background: var(--amber); }
 .photo img {
@@ -78,10 +129,11 @@ ul, ol { padding: 0; list-style: none; }
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid var(--cream);
+  border: 4px solid var(--mint-band);
 }
 .hero h1 { margin-top: 8px; font-size: 42px; line-height: 1.1; }
-.hero .role { font-size: 20px; font-weight: 600; color: var(--green); }
+.hero .role { font-size: 20px; font-weight: 600; color: var(--green); text-wrap: balance; }
+.hero .loc { margin-top: -10px; font-size: 14px; font-weight: 500; color: var(--muted); }
 .hero .stat {
   color: var(--green);
   font-weight: 600;
@@ -115,7 +167,7 @@ ul, ol { padding: 0; list-style: none; }
   text-align: left;
 }
 .skill { border-left: 3px solid var(--green); padding: 2px 0 2px 16px; }
-.skill h3 { margin-bottom: 4px; font-size: 17px; color: var(--amber-ink); }
+.skill h3 { margin-bottom: 4px; font-size: 17px; color: var(--ink); }
 .skill p { color: var(--muted); font-size: 16px; }
 
 /* Experiência */
@@ -168,8 +220,8 @@ ul, ol { padding: 0; list-style: none; }
 .job .meta { color: var(--muted); font-size: 15px; }
 .job ul {
   margin-top: 8px;
-  padding-left: 18px;
-  list-style: disc;
+  padding-left: 0;
+  list-style: none;
   color: var(--muted);
   font-size: 16px;
   display: flex;
@@ -177,11 +229,42 @@ ul, ol { padding: 0; list-style: none; }
   gap: 4px;
 }
 
+.job li { position: relative; padding-left: 22px; }
+.job li::before { content: '✓'; content: '✓' / ''; position: absolute; left: 0; color: var(--green); font-weight: 700; }
+
+/* Status da experiência atual (referência a pipeline de testes) */
+.status-dot {
+  position: absolute;
+  left: 36px;
+  top: 36px;
+  z-index: 1;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--paper);
+}
+.status-dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: status-pulse 2.4s ease-out infinite;
+}
+@keyframes status-pulse {
+  from { transform: scale(1); opacity: .55; }
+  to { transform: scale(2.4); opacity: 0; }
+}
+.job .now { color: var(--green); font-weight: 700; }
+
+
 /* Projetos */
 .lead { margin-top: -8px; color: var(--muted); text-align: center; }
 .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; width: 100%; }
 .card {
   background: var(--paper);
+  border: 1px solid var(--line);
   border-radius: 14px;
   padding: 28px 32px;
   display: flex;
@@ -260,7 +343,7 @@ ul, ol { padding: 0; list-style: none; }
   left: 50%;
   transform: translateX(-50%);
   width: 230px;
-  background: var(--mint-band);
+  background: var(--paper);
   color: var(--ink);
   border: 1px solid var(--green);
   border-radius: 12px;
@@ -278,6 +361,7 @@ ul, ol { padding: 0; list-style: none; }
 .edu { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; width: 100%; }
 .edu-card {
   background: var(--paper);
+  border: 1px solid var(--line);
   border-radius: 12px;
   padding: 16px;
   display: flex;
@@ -296,7 +380,7 @@ ul, ol { padding: 0; list-style: none; }
   justify-content: center;
 }
 .edu-card .icon img { max-width: 44px; max-height: 44px; object-fit: contain; }
-.edu-card .kind { font-size: 10.5px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--amber-ink); }
+.edu-card .kind { font-size: 10.5px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--green); text-wrap: balance; }
 .edu-card h3 { font-size: 16px; line-height: 1.25; }
 .edu-card .school { color: var(--muted); font-size: 16px; font-weight: 600; }
 .edu-card .desc { color: var(--muted); font-size: 14px; }
@@ -313,6 +397,7 @@ ul, ol { padding: 0; list-style: none; }
   border-bottom: 1px solid var(--line);
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   gap: 16px;
   flex-wrap: wrap;
 }
@@ -339,6 +424,22 @@ ul, ol { padding: 0; list-style: none; }
   transition: transform .2s ease, box-shadow .2s ease;
 }
 .outline-btn:hover { transform: scale(1.06); }
+/* Currículo: o fundo âmbar preenche da esquerda para a direita e o ícone sobe */
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(var(--amber), var(--amber)) no-repeat left / 0% 100%;
+  transition: background-size .35s ease, color .35s ease, border-color .35s ease;
+}
+.cv-btn svg { transition: transform .35s ease; }
+.cv-btn:hover, .cv-btn:focus-visible {
+  transform: none;
+  background-size: 100% 100%;
+  color: var(--amber-ink);
+  border-color: var(--amber);
+}
+.cv-btn:hover svg, .cv-btn:focus-visible svg { transform: translateY(-2px) rotate(-6deg); }
 .footer .credit { margin-top: 14px; font-size: 14px; opacity: .85; max-width: none; }
 
 @media (max-width: 900px) and (min-width: 641px) {
@@ -347,6 +448,8 @@ ul, ol { padding: 0; list-style: none; }
 
 @media (max-width: 640px) {
   .wrap { padding: 0 20px; }
+  /* Cursos e reconhecimentos: data sempre abaixo do título */
+  .row, .reco .top { flex-direction: column; gap: 2px; }
   .section { padding: 52px 0; }
   .hero { padding: 64px 0 56px; }
   .hero h1 { font-size: 38px; }
@@ -363,4 +466,5 @@ ul, ol { padding: 0; list-style: none; }
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
+  .status-dot::after { animation: none; }
 }
